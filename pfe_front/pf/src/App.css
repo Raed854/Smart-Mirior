@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; 
   text-decoration: none;
 }
 
@@ -21,9 +21,9 @@ main {
 }
 
 .sidebar {
-  background: white; /* Change background color to white */
-  color: #333; /* Change text color to a dark color for better contrast */
-  height: 100vh;
+  background: black;
+  color: #fff;
+  height: 50vh;
   width: 200px;
   transition: all 0.5s;
 }
@@ -40,40 +40,13 @@ main {
 
 .bars {
   display: flex;
-  font-size: 25px;
+  font-size: 30%;
   margin-left: 50px;
-}
-
-.search-bar {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.search-input {
-  padding-right: 30px;
-  width: 100%;
-  background-color: #fff;
-  color: #333;
-  border: none;
-  padding: 10px;
-}
-
-.search-icon {
-  position: absolute;
-  right: 10px;
-  font-size: 20px;
-  color: #333;
-  cursor: pointer;
-}
-
-ul {
-  list-style: none;
 }
 
 .link {
   display: flex;
-  color: #333; /* Change text color to a dark color for better contrast */
+  color: #fff;
   padding: 10px 15px;
   gap: 15px;
   transition: all 0.5s;
@@ -91,9 +64,9 @@ ul {
 }
 
 .submenu {
-  background:#fff; /* Change background color to a dark color */
+  background: lightblue;
   color: #000;
-  padding: 10px;
+  padding: 5px;
   margin-top: 5px;
   list-style-type: none;
 }
@@ -104,13 +77,52 @@ ul {
 
 .submenu .link {
   display: flex;
-  color: #333;
+  color: #fff;
   padding: 8px 0;
   gap: 10px;
   transition: all 0.5s;
 }
 
+.submenu .link:hover {
+  background: lightblue;
+  color: #000;
+}
+
 .dashboard-li {
   font-weight: bold;
-  color: #333; /* Change text color to a dark color for better contrast */
+  color: #fff;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+ 
+  background-color:white;
+ 
+}
+
+.search-container {
+  position: relative;
+  flex-grow: 1;
+ 
+}
+
+.search-container input[type="text"] {
+  width: 200%;
+  padding: 6px;
+  border: none;
+  border-radius: 3px;
+  background-color:black;
+  color:white;
+}
+
+.search-icon {
+  position: absolute;
+  left: 320px;
+  top: 2.5%;
+  
+
+  transform: translateY(-50%);
+  color: white;
+  font-size: 1.2rem;
 }

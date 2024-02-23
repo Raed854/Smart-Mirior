@@ -1,0 +1,18 @@
+.InputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Add this CSS for the content container */
+.content {
+  padding: 20px;
+}
